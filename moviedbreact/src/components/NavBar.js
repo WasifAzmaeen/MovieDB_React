@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo" style={{ marginLeft: 20 }}>
+          <Link to="/" className="brand-logo" style={{ marginLeft: 20 }}>
             My Movie DB
-          </a>
+          </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">Top Movies</a>
+              <a href="sass.html">Popular Movies</a>
             </li>
             <li>
               <a href="badges.html">TV Shows</a>
@@ -25,4 +26,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
